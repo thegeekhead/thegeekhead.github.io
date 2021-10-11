@@ -1,0 +1,145 @@
+/* body{
+    background: red;
+} */
+
+
+
+/* navbar */
+.random{
+    margin-right: 150px;
+}
+
+.navbar-brand{
+    margin-left: 150px;
+}
+
+.custom{
+    background: #d9d9d9;
+}
+
+.navbar{
+    padding: 0px;
+}
+
+
+
+
+
+.intro{
+    margin-top: 50px;
+    display: flex;
+}
+
+.home-image{
+    margin-left: 75px;
+    margin-top: 50px;
+}
+
+.home-text{
+    margin-top: 150px;
+    margin-right: 75px;
+}
+
+.social-media-icon{
+    border-radius: 100px;
+    margin: 5px;
+    color: #284b63;
+    background-color: #d9d9d9;
+}
+
+.blink{
+    animation:blinkingText 0.75s infinite;
+}
+
+@keyframes blinkingText {
+    0%{ color: #000;}
+    49%{ color: #000;}
+    60%{ color: transparent;}
+    99%{ color: transparent;}
+    100%{ color: #000;}
+}
+
+
+.arrow{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hr-text{
+    content: attr(data-content);
+    position: relative;
+}
+
+.bounce{
+    animation: bounce 0.75s infinite;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    30% {transform: translateY(0px);}
+    50% {transform: translateY(-25px);}
+    100% {transform: translateY(0px);}
+}
+
+.abt-skill-btn{
+    text-align: center!important;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.button-group{
+    border-radius: 0px;
+}
+
+.all-heading{
+    padding-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.about-me-text{
+    margin-top: 150px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+footer{
+    background-color: #353535;
+}
+
+.text-footer{
+    color: #ffffff;
+}
+
+hr{ 
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    /* margin: 1em 0; */
+    padding: 0;
+}
+
+.btn-all{
+    color: #284b63;
+    border-color: #284b63;
+    background-color: #d9d9d9;
+}
+
+.btn-all:hover{
+    background-color: #3c6e71;
+    border-color: #3c6e71;
+    color: #ffffff;
+}
+
+.btn-all:active{
+    background-color: #3c6e71;
+    border-color: #3c6e71;
+    color: #ffffff;
+}
+
+.text-styles{
+    color: #353535;
+}

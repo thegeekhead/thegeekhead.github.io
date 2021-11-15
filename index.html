@@ -12,7 +12,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/main.css" class="css">
-  <link rel="icon" href="images/titleicon.jpg" type="image/x-icon">
+  <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -24,9 +24,9 @@
   <!-- navbar -->
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="custom container-fluid">
-      <a class="navbar-brand" href="#"><span class="text-styles">Anshansh Suman</span></a>
+      <a class="navbar-brand" href="#"><span class="text-styles nav-item">Anahansh Suman</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active navbar-right" aria-current="page" href="#"><span
-                class="text-styles">Home</span></a>
+                class="text-styles nav-item">Home</span></a>
           </li>
           <!-- <li class="nav navbar-nav navbar-right">
             <a class="nav-link" href="projects.html">Projects</a>
@@ -44,8 +44,7 @@
             <a class="nav-link" href="portfolio.html">Portfolio</a>
           </li> -->
           <li class="nav-item">
-            <!-- need to add text-styles  -->
-            <a class="nav-link active navbar-right" href="images/Anshansh_Suman.pdf" target="blank_">Resume</a>
+            <a class="nav-link active navbar-right" href="assets/resume/Anshansh_Suman.pdf" target="blank_"><span class="text-styles nav-item">Resume</span></a>
           </li>
           <!-- <li class="nav-item navbar-right"> -->
           <!-- need to add text-styles  -->
@@ -67,7 +66,7 @@
       <!-- home image -->
 
       <div class="col home-image" style="padding-right: 5%;" id="banner-image">
-        <img src="images/home.gif" class="img-fluid" alt="">
+        <img src="assets/images/intro.png" class="img-fluid" alt="">
       </div>
 
       <!-- home text -->
@@ -140,7 +139,7 @@
 
     <!-- projects skills cocurricular button -->
 
-    <div class="btn-group" role="group" aria-label="Basic outlined example">
+    <div class="" role="group" aria-label="Basic outlined example">
       <a href="#projects">
         <button type="button" class="btn btn-all" style="border-radius: 10px; margin: 10px">Projects</button>
       </a>
@@ -158,7 +157,7 @@
   <!-- about me -->
 
   <div class="container">
-    <div class="row" id="banner-content">
+    <div class="row about-me" id="banner-content">
       <div class="col about-me-text text-center" style="padding-left: 5%;">
         <p class="text-styles">
           Desired to work in an IT organization with all my
@@ -167,7 +166,7 @@
         </p>
       </div>
       <div class="col about-me-image" style="padding-right: 0%;" id="banner-image">
-        <img src="images/hi.jpg" class="img-fluid" alt="">
+        <img src="assets/images/aboutme.png" class="img-fluid" alt="">
       </div>
     </div>
   </div>
@@ -188,43 +187,62 @@
   <!-- projects -->
 
   <div class="container">
-    <div class="row" style="padding-top: 50px; padding-bottom: 50px;">
+    <div class="row projects" style="padding-top: 50px; padding-bottom: 50px;">
       <div class="col">
-        <div class="text-center">
-          <img src="images/java.jpg" class="img-fluid" alt="" width="75%" style="padding-top: 20px;">
-        </div>
-        <div class="all-heading text-center">
-          <h5 class="text-styles">Census Employee Automation System</h5>
-        </div>
-        <div class="text-center">
-          <h6 class="text-styles">Implement a system for census from managing employee to filling the census form</h6>
+        <div class="card">
+          <div class="container">
+            <h4><b class="text-styles">Census Employee Automation System</b></h4>
+            <p class="text-styles">Implement a system for census from managing employee to filling the census form.</p>
+          </div>
         </div>
       </div>
       <div class="col">
-        <div class="text-center">
-          <img src="images/android.jpg" class="img-fluid" alt="" width="75%" style="padding-top: 20px;">
-        </div>
-        <div class="all-heading text-center">
-          <h5 class="text-styles">Daily Delivery</h5>
-        </div>
-        <div class="text-center">
-          <h6 class="text-styles">Integration of customer, employee and business app in real-time using MySQL and
-            authentication using Firebase.</h6>
+        <div class="card">
+          <div class="container">
+            <h4><b class="text-styles">Daily Delivery</b></h4>
+            <p class="text-styles">Integration of customer, employee and business app in real-time using MySQL and
+              authentication using Firebase.</p>
+          </div>
         </div>
       </div>
       <div class="col">
-        <div class="text-center">
-          <img src="images/htmlcssjs.jpg" class="img-fluid" alt="" width="75%" style="padding-top: 20px;">
-        </div>
-        <div class="all-heading text-center">
-          <h5 class="text-styles">Daily Chores List</h5>
-        </div>
-        <div class="text-center">
-          <h6 class="text-styles">Using HTML, CSS and JavaScript a to-do list is made in ehich user can add and delete
-            their tasks</h6>
+        <div class="card">
+          <div class="container">
+            <h4><b class="text-styles">Daily Chores List</b></h4>
+            <p class="text-styles">Using HTML, CSS and JavaScript a to-do list is made in ehich user can add and delete
+              their tasks</p>
+          </div>
         </div>
       </div>
     </div>
+    <!-- <div class="row projects" style="padding-top: 50px; padding-bottom: 50px;">
+      <div class="col">
+        <div class="card">
+          <div class="container">
+            <h4><b>Census Employee Automation System</b></h4>
+            <p>Implement a system for census from managing employee to filling the census form.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="container">
+            <h4><b>Daily Delivery</b></h4>
+            <p>Integration of customer, employee and business app in real-time using MySQL and
+              authentication using Firebase.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="container">
+            <h4><b>Daily Chores List</b></h4>
+            <p>Using HTML, CSS and JavaScript a to-do list is made in ehich user can add and delete
+              their tasks</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
   </div>
 
 
@@ -244,7 +262,7 @@
   <div class="container">
     <div class="col">
       <div class="text-center">
-        <img src="images/achivement.jpg" class="img-fluid" alt="" width="32.5%" style="padding-top: 50px;">
+        <img src="assets/images/achivements.png" class="img-fluid" alt="" width="32.5%" style="padding-top: 50px;">
       </div>
       <div class="row" style="padding-top: 75px;">
         <div class="col text-center">
@@ -260,7 +278,7 @@
         <div class="col text-center">
           <i class="fas fa-code-branch text-styles" style="font-size: 25px; padding-bottom: 10px;"></i>
           <h5 class="text-styles" style="padding: 3%;">Frameworks</h5>
-          <h6>ReactJS, NodeJS, Spring Boot</h6>
+          <h6 class="text-styles">ReactJS, NodeJS, ExpressJS</h6>
         </div>
         <div class="col text-center">
           <i class="fas fa-cogs text-styles" style="font-size: 25px; padding-bottom: 10px;"></i>
@@ -287,9 +305,9 @@
   <div class="container">
     <div class="col">
       <div class="text-center">
-        <img src="images/cocurricular.jpg" class="img-fluid" alt="" width="30%">
+        <img src="assets/images/co-curricular.png" class="img-fluid" alt="" width="30%">
       </div>
-      <ul style="text-align: center; list-style: none; padding-top: 12px; padding-bottom: 5px;">
+      <ul class="co-curricular">
         <li>
           <h6 class="text-styles" style="padding-top: 6px;"><i class="fas fa-hand-point-right"></i> Android based app
             devlopment Training from CSDT.</h6>
@@ -330,26 +348,25 @@
 
   <!-- footer -->
 
-  <footer style="padding: 2%;">
-    <div class="container">
-      <div class="row" id="banner-content">
-        <div class="col" style="padding-left: 0%;">
-          <div class="container">
-            <div class="">
+  <footer>
+      <div class="container row foot" id="banner-content">
+        <div class="col">
+          <div class="container foot-copyright">
+            <div class="fool-illustratioons">
               <h6 class="text-center text-footer">All illustrations on this website are my own work and are subject to
                 copyright</h6>
             </div>
             <hr class="hr-text">
-            <div>
+            <div class="foot-coyright">
               <h6 class="text-center text-footer">Copyright © 2021 Anshansh Suman <br> All rights reserved</h6>
             </div>
           </div>
         </div>
-        <div class="col " style="padding-right: 5%;" id="banner-image">
-          <div class="">
+        <div class="col foot-connect-btn" id="banner-image">
+          <div class="foot-connect">
             <h6 class="text-center text-footer">Connect me on:</h6>
           </div>
-          <div class="btn-group" style="margin-left: 25%;">
+          <div class="btn-group foot-btn">
             <a href="https://twitter.com/anshanshsuman" target="blank_">
               <button class="btn btn-secondary social-media-icon btn-all">
                 <i class="fab fa-twitter">
@@ -388,7 +405,6 @@
           </div>
         </div>
       </div>
-    </div>
   </footer>
 
 

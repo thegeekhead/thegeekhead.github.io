@@ -1,16 +1,44 @@
-/* body{
-    background: red;
-} */
+::-webkit-scrollbar {
+    width: 2px;
+}
 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--secondary-dark);
+    border-radius: 10px;
+}
 
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-light);
+}
 
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-text);
+}
+
+:root{
+    --primary-text: #ffffff;
+    --primary-orange: #F64B29;
+    --secondary-text: #FFD6AE;
+    --secondary-dark: #1B212C;
+    --secondary-light: #3C4657;
+}
+body{
+    background: var(--secondary-dark);
+}
 /* navbar */
+.custom{
+    background-color: var(--secondary-light) !important;
+}
 .random{
     margin-right: 150px;
 }
 
 .navbar-brand{
     margin-left: 150px;
+}
+
+.nav-item:hover{
+    color: var(--secondary-text);
 }
 
 .custom{
@@ -114,7 +142,6 @@ hr{
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    /* margin: 1em 0; */
     padding: 0;
 }
 
@@ -125,20 +152,73 @@ hr{
 }
 
 .btn-all:hover{
-    background-color: #3c6e71;
-    border-color: #3c6e71;
-    color: #ffffff;
+    background-color: var(--secondary-text);
+    border-color: var(--secondary-text);
+    color: var(--secondary-dark);
 }
 
 .btn-all:active{
-    background-color: #3c6e71;
-    border-color: #3c6e71;
+    background-color: var(--secondary-dark);
+    border-color: var(--secondary-dark);
     color: #ffffff;
 }
 
 .text-styles{
-    color: #353535;
+    color: var(--primary-text);
 }
+
+.co-curricular{
+    padding-right: 30px;
+    text-align: center;
+    list-style: none;
+    padding-top: 12px;
+    padding-bottom: 5px;
+}
+
+footer{
+    background-color: var(--secondary-light);
+}
+
+.foot{
+    display:unset;
+    align-items: center;
+}
+.foot-connect-btn{
+    text-align: center;
+}
+.foot-connect{
+    display: none;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 var(--secondary-light);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: calc(50% - 175px);
+    left: calc(50% - 125px);
+    background: inherit;
+    border-radius: 2px;
+    overflow: hidden;
+   }
+  .card:after{
+    width: 300px;
+    height: 300px;
+    background: inherit; 
+    position: absolute;
+    left: -25px;
+    right: 0;
+    top: -25px;  
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+    filter: blur(10px);
+   }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 
 @media (max-width: 480px) {
     .navbar-brand{
@@ -150,16 +230,30 @@ hr{
     .navbar-toggler{
         border: none;
     }
+    .intro{
+        margin: 0px;
+        display: unset;
+    }
     .home-image{
         padding: 0px;
         margin: 0px;
         max-width: 100vw;
     }
-    .row{
+    .about-me{
+        padding: 0px;
+        display: unset;
+    }
+    .about-me-text{
+        margin: 0px;
+    }
+    /* .row{
         margin-top: 0px;
         max-height: 100vh;
-    }
+    } */
     .home-text{
         margin: 0px;
+    }
+    .projects{
+        display: unset;
     }
 }
